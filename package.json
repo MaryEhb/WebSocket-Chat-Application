@@ -1,0 +1,15 @@
+{
+  "name": "websocket-chat",
+  "version": "1.0.0",
+  "main": "src/server/server.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "ws": "^8.18.1"
+  },
+  "scripts": {
+    "start": "node src/server/server.js",
+    "client": "node src/client/client.js"
+  }
+}
