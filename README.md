@@ -43,8 +43,8 @@ Follow these steps to set up and run the WebSocket Chat Application on your loca
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd websocket-chat
+git clone https://github.com/MaryEhb/WebSocket-Chat-Application
+cd WebSocket-Chat-Application
 ```
 
 ### 2. Install Dependencies
@@ -210,6 +210,17 @@ Client1         Server         Client2
 ```
 
 *Description*: The server acknowledges Client2's username by sending a welcome message. It also broadcasts a message to all connected clients to inform them of the new user.
+
+6. **Client2 sends a message:**
+
+```
+Client1         Server         Client2
+  |               |               |
+  |<---(message)--|<--(message)---|
+  |               |               |
+```
+
+*Description*: Client2 sends a message to the server. The server then broadcasts this message to all connected clients.
 
 In this scenario, the server acknowledges each new client and broadcasts the new user information to all connected clients.
 
